@@ -1,0 +1,72 @@
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Navbar styling */
+    nav {
+      position: sticky;
+      top: 0;
+      width: 92%;
+      background: #ff4d4d; /* tomato red */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Logo */
+    .logo {
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+    }
+
+    /* Navbar links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    /* Hover underline animation */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: -6px;
+      left: 0;
+      background-color: #fff;
+      transition: 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: #ffe066; /* golden highlight */
+    }
