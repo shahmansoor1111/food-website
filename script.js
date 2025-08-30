@@ -32,3 +32,20 @@ function toggleMenu() {
       eat.classList.add("typing");
     }
   });
+  
+  const text = "Our Featured Fast Foods";
+  let i = 0;
+  function typeEffect() {
+    if (i < text.length) {
+      document.getElementById("drink").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeEffect, 80); // typing speed
+    }
+  }
+  window.addEventListener("scroll", () => {
+    const section = document.getElementById("drink");
+    const position = section.getBoundingClientRect().top;
+    if (position < window.innerHeight && i === 0) {
+      typeEffect();
+    }
+  });

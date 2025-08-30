@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foodie shahmeer</title>
   <link rel="stylesheet" href="style.css">
+<style>
+  html {
+  scroll-behavior: smooth
+  }
+</style>
+
+
 </head>
 <body>
   <nav>
     <div class="logo">🍔 Foodies</div>
     <ul id="nav-links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Specials</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#special">Specials</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
     <button class="order-btn">Order Now</button>
@@ -52,7 +59,84 @@
   </div>
 
 
+
+<section  id="special" class="featured-foods">
+  
+  <h2 id="drink"></h2>
+  <div  class="food-grid">
+    <div class="food-card">
+      <img src="./img/burger000.avif" alt="Burger">
+      <h3>Burger</h3>
+      <p>Juicy, cheesy & fresh.</p>
+    </div>
+    <div class="food-card">
+      <img src="./img/ppppppp.avif" alt="Pizza">
+      <h3>Pizza</h3>
+      <p>Cheesy delight with toppings.</p>
+    </div>
+    <div class="food-card">
+      <img src="./img/frees.avif" alt="Fries">
+      <h3>Fries</h3>
+      <p>Crispy golden fries.</p>
+    </div>
+  </div>
+
+  
+</section>
+
+
+ <div class="container">
+    <!-- Left Div: Burger -->
+    <div class="box">
+      <h1>HUM Burger</h1>
+      <img src="./img/burger.photo.avif" alt="Burger">
+      <br>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Right Div: Pizza -->
+    <div class="box">
+      <h1>Italian Pizza</h1>
+      <img src="./img/pizza1.webp" alt="Pizza">
+      <br>
+      <button>Order Now</button>
+    </div>
+  </div>
+<h1 style="text-align: center; color: #ff4d4d ; font-family: cursive;">Menu</h1>
+
+  <div id="menu" class="food-row">
+    <div class="food-item">
+      <img src="./img/pepsi (2).jpeg" alt="Burger">
+      <p>Pepsi</p>
+    </div>
+    <div class="food-item">
+      <img src="./img/pizaa3.avif" alt="Pizza">
+      <p>Pizza</p>
+    </div>
+    <div class="food-item">
+      <img src="./img/7a3bde94-c0e1-47e0-ba27-e2d8ba889fda.jpeg" alt="Fries">
+      <p>Fish</p>
+    </div>
+    <div class="food-item">
+      <img src="./img/Top 10 Secrets for Ultimate Crispiness.jpeg" alt="Chicken">
+      <p>Chicken</p>
+    </div>
+    <div class="food-item">
+      <img src="/img/rice.photo.jpg" alt="Rice">
+      <p>Rice</p>
+    </div>
+    <div class="food-item">
+      <img src="./img/Homemade French Fries.jpeg" alt="Fish">
+      <p>Fries</p>
+    </div>
+    <div class="food-item">
+      <img src="./img/burger2.photo.jpg" alt="Soup">
+      <p>Burger</p>
+    </div>
+  </div>
+</body>
   
   <script src="./script.js"></script>
+ 
 </body>
 </html>
