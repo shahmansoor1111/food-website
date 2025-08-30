@@ -24,3 +24,11 @@ function toggleMenu() {
     setInterval(() => {
       moveSlide(1);
     }, 3000);
+    const eat = document.getElementById("eat");
+
+  window.addEventListener("scroll", () => {
+    const rect = eat.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      eat.classList.add("typing");
+    }
+  });
