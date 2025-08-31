@@ -145,11 +145,12 @@
     }
 
     .hero-text h1 {
-      font-size: 60px;
+      font-size: 50px;
       color: #ff4d4d;
       margin-bottom: 20px;
-      line-height: 1.2;
-      font-weight: 700;
+       font-family: cursive;
+      line-height: 1.6;
+      font-weight: 600;
       animation: textPop 2s ease infinite alternate;
     }
 
@@ -270,7 +271,7 @@
       position: relative;
       bottom: 70px;
       /* width: 100%; */
-      max-width: 900px;
+      max-width: 800px;
       height: 450px;
       margin: 40px auto;
       overflow: hidden;
@@ -597,8 +598,9 @@
 
     .promo-container img {
       width: 100%;
-      height: 600px;
+      height: 550px;
       display: block;
+      /* object-fit: cover; */
     }
 
     /* Text overlay */
@@ -614,6 +616,7 @@
       font-size: 24px;
       margin: 0;
       background: #ff4d4d;
+       font-family: cursive;
       display: inline-block;
       padding: 5px 15px;
       border-radius: 8px;
