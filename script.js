@@ -49,3 +49,5 @@ function toggleMenu() {
       typeEffect();
     }
   });
+
+  
