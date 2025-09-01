@@ -126,9 +126,9 @@
 
     /* Hero Section */
     .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
       padding: 60px 10%;
       min-height: 100vh;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -280,33 +280,46 @@
     }
    
     #eat {
-       text-align: center;
-      position: relative;
-      bottom: 60px;
-      font-family: cursive;
-    
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ff4d4d;
-   
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;  /* hidden at start */
-    opacity: 0;
-  }
+  text-align: center;
+  position: relative;
+  bottom: 90px;
+  font-family: cursive;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff4d4d;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; 
+  border-right: none; 
+  /* border-right: 3px solid #ee1a1a; cursor while typing */
+}
 
-  @keyframes typing {
-    from { width: 0; opacity: 1; }
-    to { width: 98%; opacity: 1; }
-  }
+#eat.typing {
+  animation: typing 4s steps(20, end) forwards; /* only typing, no blink */
+}
 
-  @keyframes blink {
-    50% { border-color: transparent }
-  }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 70%; }
+}
+#eat.typing {
+  animation: typing 4s steps(80, end) forwards, blink 0.8s step-end 4s 5; 
+}
+
+/* typing */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 70%; }
+}
+
+/* blink during typing */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
 
   /* active class for animation */
   .typing {
-    animation: typing 4s steps(150, end) forwards, blink 2s infinite;
+    animation: typing 4s steps(20, end) forwards, blink 1s infinite;
   }
     
 
@@ -424,6 +437,8 @@
   transform: translateX(50px);
   animation: fadeSlide 1.1s ease-in forwards;
   animation-delay: 0.1s;
+  position: relative;
+  bottom: 80px;
 }
 
 @keyframes fadeSlide {
@@ -702,3 +717,62 @@
     position: relative;
     bottom: 80px;
   }
+
+  footer {
+background-color: #333030;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-image img {
+
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: yellow;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  font-size: 1.8rem;
+}
+
+.footer-social a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: yellow;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
