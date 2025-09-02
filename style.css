@@ -720,8 +720,8 @@
 
   footer {
 background-color: #434040;
-  color: white;
-  padding: 40px 20px;
+  color: rgb(241, 232, 232);
+  padding: 40px 19px;
   text-align: center;
   margin-top: 50px;
 }
@@ -735,7 +735,7 @@ background-color: #434040;
 
 .footer-image img {
 
-  height: 200px;
+  height: 201px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(116, 109, 109, 0.3);
 }
