@@ -746,7 +746,7 @@ background-color: rgb(110, 104, 104);
 }
 
 .footer-links a {
-  color: white;
+  color: rgb(189, 179, 179);
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
