@@ -737,7 +737,7 @@ background-color: rgb(110, 104, 104);
 
   height: 201px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(104, 101, 101, 0.3);
+  box-shadow: 0 4px 10px rgba(195, 190, 190, 0.3);
 }
 
 .footer-links {
@@ -746,7 +746,7 @@ background-color: rgb(110, 104, 104);
 }
 
 .footer-links a {
-  color: rgb(189, 179, 179);
+  color: rgba(188, 166, 166, 1);
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
