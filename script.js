@@ -45,7 +45,7 @@ function typeEffect() {
   if (i < text.length) {
     document.getElementById("drink").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typeEffect, 80); // typing speed
+    setTimeout(typeEffect, 80);
   }
 }
 
