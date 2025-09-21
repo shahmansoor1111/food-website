@@ -718,61 +718,59 @@
     bottom: 80px;
   }
 
-  footer {
-background-color: rgb(110, 104, 104);
-  color: rgba(222, 212, 212, 1);
-  padding: 40px 19px;
+  
+.footer {
+  background: #111;
+  color: white;
+  padding: 40px 0;
   text-align: center;
-  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.footer-logo img {
+  width: 80px;
+  animation: bounce 2s infinite;
 }
 
-.footer-image img {
-
-  height: 201px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(148, 145, 145, 0.3);
+.footer-logo h2 {
+  margin: 10px 0;
+  font-size: 64px;
+  color: #ffcc00;
+   font-family: cursive;
 }
-
-.footer-links {
-  display: flex;
-  gap: 30px;
+.footer-logo p{
+font-size: 20px;
+ font-family: cursive;
 }
-
-.footer-links a {
-  color: rgba(160, 146, 146, 1);
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: yellow;
-}
-
 .footer-social {
-  display: flex;
-  gap: 20px;
-  font-size: 1.8rem;
+  margin: 20px 0;
+  position: relative;
+
+  top: 20px;
 }
 
 .footer-social a {
   color: white;
-  transition: color 0.3s ease;
+  margin: 0 15px;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .footer-social a:hover {
-  color: yellow;
+  color: #ffcc00;
+  transform: scale(1.2) rotate(10deg);
 }
 
 .footer-bottom {
   margin-top: 20px;
-  font-size: 0.9rem;
-  opacity: 0.8;
+  font-size: 14px;
+  opacity: 0.7;
 }
+
+/* Animation for logo */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
